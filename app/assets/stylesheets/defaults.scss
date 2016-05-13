@@ -1,0 +1,41 @@
+.comic-box {
+  padding: 1.0em 0em 1.0em 0em;
+  margin: 0 1.0em 0 1.0em ;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: rgb(51, 51, 51) 5px 5px 0px 0px;
+  position: relative;
+
+  &.full-padding{
+    padding: 1em 1em 1em 1em;
+  }
+  &.right-margin{
+    margin-right: 1em;
+  }
+
+
+  &.pink{
+    background-color: #F59A9D;
+  }
+  &.red{
+    background-color: red;
+  }
+  &.twitter-blue{
+    background-color: #1DA1F2;
+  }
+  &.facebook-blue{
+    background-color: #3B5998;
+  }
+  &.light-green{
+    background-color: #7BB875;
+  }
+}
+
+.email {
+  float: left;
+
+  &, & a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
