@@ -1,14 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tropanerd</title>
+  <title>Tropa Nerd</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.ico"/>
+  <!-- Custom Theme files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Impressive Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+  Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+
+  <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+  </script>
+  <!-- //end-smoth-scrolling -->
+
 </head>
 <body>
+  <!--header start here-->
+  <div class="banner bann-mask">
+  	<div class="container">
+  		<div class="phone-icons">
+  			<div class="phone-num"><p><a href="mailto:contato@tropanerd.com">contato@tropanerd.com</a></p></div>
+  			<div class="social-icons">
+  				<ul>
+  					<li><a target="_blank" href="https://www.facebook.com/tropanerdoficial"><span class="transitions scaling fa"> </span></a></li>
+  					<li><a target="_blank" href="https://twitter.com/nerdtroop"																											  ><span class="transitions scaling tw"> </span></a></li>
+  					<!-- <li><a href="#"><span class="transitions scaling g"> </span></a></li> -->
+  				</ul>
+  			</div>
+  		   <div class="clearfix"> </div>
+  		</div>
+  	  </div>
+    <div class="header">
+  	<div class="container">
+  		 <div class="header-main">
+  				<div class="logo shake">
+  					<a href="#">Tropa Nerd</a>
+  				</div>
+  				<div class="top-nav">
+  					<span class="menu"> <img src="/assets/menu-icon.png" alt=""/></span>
+  					<ul class="res">
+  					  <li class="transitions scaling-rotating active"><a href="#">Home</a></li>
+  					  <li class="transitions scaling-rotating"><a href="#">Sobre</a></li>
+  						<li class="transitions scaling-rotating"><a href="#">Cosplay</a></li>
+  						<li class="transitions scaling-rotating"><a href="#">Cosmake</a></li>
+  						<li class="transitions scaling-rotating"><a href="#">Equipe</a></li>
+  						<li class="transitions scaling-rotating"><a href="#">Contato</a></li>
+  				   </ul>
+  					<!-- script-for-menu -->
+  						 <script>
+  						   $( "span.menu" ).click(function() {
+  							 $( "ul.res" ).slideToggle( 300, function() {
+  							 // Animation complete.
+  							  });
+  							 });
+  						</script>
+  				</div>
+  		   <div class="clearfix"> </div>
+  	    </div>
+    	 </div>
+     </div>
+     <!--
+  	 <div class="banner-bottom">
+  	 	<div class="container">
+  		 	<h2>Em construção!</h2>
+  		 	<h3>Estamos construindo um universo nerd completo para vocês!</h3>
+  		 	<p>Uma tropa de super poderosos seres está prestes a invadir a sua vida!</p>
+  	       <div class="ban-mouse">
+  	       	  <a href="#about"><span class="mouse"> </span></a>
+  	       </div>
+  	   </div>
+  	</div>
+    -->
+  </div>
 
-<%= yield %>
+  <%= yield %>
 
+  <div class="footer">
+  	<div class="container">
+  		<div class="footer-main">
+  			<div class="footer-top">
+  				<h1>Não nos perca de vista!</h1>
+  				<p> Siga-nos nas redes sociais para ficar por dentro de tudo que rola dentro da Tropa!</p><br/>
+  				<div class="social-icons" style="float: none">
+  					<ul>
+  						<li><a target="_blank" href="https://www.facebook.com/tropanerdoficial"><span class="transitions scaling fa"> </span></a></li>
+  						<li><a target="_blank" href="https://twitter.com/nerdtroop"																											  ><span class="transitions scaling tw"> </span></a></li>
+  						<!-- <li><a href="#"><span class="transitions scaling g"> </span></a></li> -->
+  					</ul><marquee>
+  				</div>
+  			</div>
+  			<div class="footer-bottom">
+  				<div class="col-md-6 footer-grid">
+  					<h4>Eventos</h4>
+  					<p>
+  						Presença confirmada <b>Tropa Nerd</b> em 2016:<br/>
+  						Anime Friends<br/>
+  						Arena Game Show SJC<br/>
+  						Brasil Game Show<br/>
+  						Comic Con Experience<br/>
+  						Vale Comics SJC
+  					</p>
+  					<ul>
+  						<li><a href="#"><span class="#"> </span></a></li>
+  						<li><a href="#"><span class="#"> </span></a></li>
+  						<li><a href="#"><span class="#"> </span></a></li>
+  						<li><a href="#"><span class="#"> </span></a></li>
+  					</ul>
+  				</div>
+  				<div class="col-md-6 footer-grid">
+  					<h4>Newsletter</h4>
+  					<p>Deixe seu email para saber sobre as novidades da Tropa Nerd</p>
+  					<form>
+  						<input type="text" value="Seu e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Seu e-mail';}">
+  						<input type="submit" value="Increver">
+  					</form>
+  			   </div>
+  		  </div>
+  		</div>
+  	</div>
+  	<div class="copy-right">
+  		<p>© 2016 Tropa Nerd. Todos os direitos reservados</p>
+  	</div>
+  </div>
 </body>
 </html>
