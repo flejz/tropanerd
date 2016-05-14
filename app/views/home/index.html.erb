@@ -1,8 +1,22 @@
 <div class="container">
 
   <% @posts.each do |post| %>
-    <div class="comic-box pink">
-      eita cuzão
+
+    <div class="card full-padding" style="margin: 0 1em 0 1em;">
+      <div class="card-block">
+        <h4 class="card-title comic-box no-margin font-bangers" style="background-image: url(<%= post.image.url %>)">
+          <div class="transitions scale">
+            <%= link_to post.title, post_path(post) %>
+          </div>
+        </h4>
+      </div>
+
+
+      <!-- <%= image_tag(post.image.url, :class => 'comic-box no-margin no-padding') %> -->
+
+      <div class="card-block">
+        <p class="card-text comic-box white text-padding no-margin"> <%= post.text.html_safe %> </p>
+      </div>
     </div>
   <% end %>
 

@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :post_images
-  get 'bandas/index'
-
   root "home#index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-
+  get '/posts/:id', to: 'posts#show', as: 'post'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

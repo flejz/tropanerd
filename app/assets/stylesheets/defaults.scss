@@ -1,19 +1,77 @@
+$border: 3px solid white;
+$border-radius: 10px;
+
 .comic-box {
+
+  background-size: cover;
   padding: 1.0em 0em 1.0em 0em;
   margin: 0 1.0em 0 1.0em ;
-  border: 3px solid white;
-  border-radius: 10px;
+  border: $border;
+  border-radius: $border-radius;
   box-shadow: rgb(51, 51, 51) 5px 5px 0px 0px;
   position: relative;
 
-  &.full-padding{
+  a {
+    $color: #fff;
+    color: $color;
+    cursor: pointer;
+    text-decoration: none;
+
+    &.active,
+    &.link,
+    &.visited{
+      color: $color;
+    }
+  }
+  img{
+
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  /*font and text*/
+  &.font-bangers{
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-size: 30pt;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 15px #000;
+  }
+  &.text-medium {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /*padding*/
+  &.no-padding{
+    padding: 0;
+  }
+  &.full-padding,
+  & .full-padding{
     padding: 1em 1em 1em 1em;
+  }
+  &.title-padding{
+    padding: 0.3em 0em 0.3em 0em;
+  }
+
+  &.text-padding{
+    padding: 0.3em 1em 0.3em 1em;
+  }
+
+  /*margin*/
+  &.no-margin{
+    margin: 0;
   }
   &.right-margin{
     margin-right: 1em;
   }
 
 
+  &.white{
+    background-color: #FFF;
+  }
   &.pink{
     background-color: #F59A9D;
   }
@@ -28,6 +86,9 @@
   }
   &.light-green{
     background-color: #7BB875;
+  }
+  &.light-purple{
+    background-color: #B886AB;
   }
 }
 

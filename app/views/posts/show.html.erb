@@ -1,11 +1,21 @@
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<% post = @post %>
+<div class="container">
 
-<p>
-  <strong>Text:</strong>
-  <%= @post.text %>
-</p>
+    <div class="card full-padding" style="margin: 0 1em 0 1em;">
+      <div class="card-block">
+        <h4 class="card-title comic-box no-margin font-bangers" style="background-image: url(<%= post.image.url %>)">
+          <div class="transitions scale">
+            <%= post.title %>
+          </div>
+        </h4>
+      </div>
 
-<%= link_to 'Back', posts_path %>
+
+      <!-- <%= image_tag(post.image.url, :class => 'comic-box no-margin no-padding') %> -->
+
+      <div class="card-block">
+        <p class="card-text comic-box light-purple text-medium text-padding no-margin"> <%= post.text.html_safe %> </p>
+      </div>
+    </div>
+
+</div>
