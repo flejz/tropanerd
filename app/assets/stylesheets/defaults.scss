@@ -75,6 +75,9 @@ $border-radius: 10px;
   &.right-margin{
     margin-right: 1em;
   }
+  &.img-margin{
+    margin: 0.3em;
+  }
 
 
   /*images*/
@@ -89,6 +92,14 @@ $border-radius: 10px;
     & a{
       color: purple;
       font-weight: bold;
+    }
+    & .images{
+      text-align: center;
+      width: 100%;
+    }
+
+    & .images img{
+      max-width: 300px;
     }
   }
   /*colors*/

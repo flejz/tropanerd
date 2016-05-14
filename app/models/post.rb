@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  has_many :post_images
   validates :title, presence: true
   validates :text, presence: true
 
