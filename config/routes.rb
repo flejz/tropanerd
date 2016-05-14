@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :post_images
   get 'bandas/index'
 
   root "home#index"

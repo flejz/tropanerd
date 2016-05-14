@@ -1,4 +1,4 @@
-ActiveAdmin.register Post do
+ActiveAdmin.register PostImage do
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -13,7 +13,6 @@ ActiveAdmin.register Post do
 #   permitted
 # end
 
-  permit_params :title, :text, :image
-
+  permit_params :description, :image, :post_id
 
 end
