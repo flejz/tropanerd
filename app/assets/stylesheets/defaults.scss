@@ -3,18 +3,22 @@ $border-radius: 10px;
 
 .comic-box {
 
+  $color: #fff;
+
   background-size: cover;
+  color: $color;
   padding: 1.0em 0em 1.0em 0em;
   margin: 0 1.0em 0 1.0em ;
   border: $border;
   border-radius: $border-radius;
   box-shadow: rgb(51, 51, 51) 5px 5px 0px 0px;
+  font-family: 'Play';
   position: relative;
 
   a {
-    $color: #fff;
-    color: $color;
+    color: #000;
     cursor: pointer;
+    text-weight: bold;
     text-decoration: none;
 
     &.active,
@@ -38,6 +42,10 @@ $border-radius: 10px;
     text-align: center;
     text-decoration: none;
     text-shadow: 0 0 15px #000;
+
+    &.small{
+      font-size: 15pt;
+    }
   }
   &.text-medium {
     font-size: 20px;
@@ -69,6 +77,21 @@ $border-radius: 10px;
   }
 
 
+  /*images*/
+  &.post{
+    background-image: url(/assets/avengers-gray-coloring-soft-2.jpg);
+    background-size: cover;
+    color: #000;
+    font-size: 20pt;
+    line-height: 22pt;
+    padding: 1em 1em 0.3em 1em;
+
+    & a{
+      color: purple;
+      font-weight: bold;
+    }
+  }
+  /*colors*/
   &.white{
     background-color: #FFF;
   }
@@ -77,6 +100,9 @@ $border-radius: 10px;
   }
   &.red{
     background-color: red;
+  }
+  &.blue{
+    background-color: #30829C;
   }
   &.twitter-blue{
     background-color: #1DA1F2;

@@ -13,7 +13,7 @@ ActiveAdmin.register Post do
 #   permitted
 # end
 
-  permit_params :title, :text, :image
+  permit_params :title, :text, :created_from, :image
 
 
 end

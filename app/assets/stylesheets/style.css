@@ -1805,6 +1805,7 @@ h3.typo1 {
 
 .scale-text:hover,
 .scale-text:focus {
+  display: inline-block;
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari */
   transform: scale(1.1);
